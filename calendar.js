@@ -3,12 +3,12 @@ const { google } = require('googleapis');
 const { OAuth2 } = google.auth
 
 const oAuth2Client = new OAuth2(
-    '747746510846-5rkqefton71fo9pneo0ld390b7kc3dau.apps.googleusercontent.com',
-    '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'
+    'YOUR_CLIENT_ID',
+    'YOUR_CLIENT_SECRET'
 )
 
 oAuth2Client.setCredentials({
-    refresh_token: '1//04UpBkbXzjP1cCgYIARAAGAQSNwF-L9IrEUtSAcClpw5WSmL5SkZzPlQn4WoSEjObKn90r-mM9tSDIujEKrS7vpVj-rk9CfRpbbY',
+    refresh_token: 'YOUR_REFRESH_TOKEN',
 })
 
 const calendar = google.calendar({ version: 'v3', auth: oAuth2Client })
